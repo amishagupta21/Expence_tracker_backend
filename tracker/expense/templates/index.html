@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% block start %}
 <h1>Expense Tracker</h1>
+<a href="{%  url 'logout_view' %}" class="btn">Logout</a>
+{{request.user}}
 <div class="container">
     <div class="header">
         <img src="https://i.ibb.co/jfScDTC/budget.png" alt="Expense Tracker" />
